@@ -4,10 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Figuras geométricas</title>
 </head>
 <body>
-    <h1>Figuras geométricas</h1>
+    <head>
+        <h1 class="titulo titulo-principal">Figuras geométricas</h1>
+        
+    </head>
+
+    <main class="contenedor sombra">
+        
+        <h2 class="titulo">Calculo de Áreas y Perímetros</h2>
+
+        <div class="figuras">
+        <section class="container-cuadrado">
+            <h3>Cuadrado</h3>
+                <form action="/" class="form" id="cuadro-form">
+                    <label for="">longitud del lado</label>
+                    <input type="number" class="input input-cuadrado" placeholder="Ingrese Valor" id="input-cuadrado-id">
+                    <label for="">Resultado</label> 
+                    <input type="number" class="input input-resultado" id="resultado-cuadrado">
+                    <button type="button" class="boton" id="cuadrado-per-id">Calculo Perímetro</button>
+                    <button type="button" class="boton"  id="cuadrado-are-id">Calculo Área</button>
+                    <button type="button" class="boton"  id="resetear-cuadro">Resetear</button>
+                 </form>
+        </section>
+
+        <section class="container-cuadrado">
+            <h3>Circulo</h3>
+                <form action="/" class="form" id="circulo-form">
+                    <label for="">longitud radio</label>
+                    <input type="number" class="input input-circulo" placeholder="Ingrese Valor" id="input-circulo-id">
+                    <label for="">Resultado</label> 
+                    <input type="number" class="input input-resultado" id="resultado-circulo">
+                    <button type="button" class="boton" id="circulo-per-id">Calculo Perímetro</button>
+                    <button type="button" class="boton" id="circulo-are-id">Calculo Área</button>
+                    <button type="button" class="boton" id="resetear-circulo">Resetear</button>
+                 </form>
+        </section>
+
+        <section class="container-cuadrado" >
+            <h3>Triángulo</h3>
+                <form action="/" class="form" id="triangulo-form">
+                    <label for="">longitud lado A</label>
+                    <input type="number" class="input input-triangulo" placeholder="Ingrese Valor" id="input-longitudA-id">
+                    <label for="">longitud lado B</label>
+                    <input type="number" class="input input-triangulo" placeholder="Ingrese Valor" id="input-longitudB-id">
+                    <label for="">Base Triangulo</label>
+                    <input type="number" class="input input-triangulo" placeholder="Ingrese Valor" id="input-Basetri-id">
+                    <label for="">Altura</label>
+                    <input type="number" class="input input-triangulo" placeholder="Ingrese Valor" id="input-Altura-id">
+                    <label for="">Resultado</label> 
+                    <input type="number" class="input input-resultado" id="resultado-triangulo">
+                    <button type="button" class="boton" id="triangulo-per-id">Calculo Perímetro</button>
+                    <button type="button" class="boton" id="triangulo-are-id">Calculo Área</button>
+                    <button type="button" class="boton" id="resetear-triangulo">Resetear</button>
+                 </form>
+        </section>
+
+
+        <section class="container-cuadrado" >
+            <h3>Triángulo isósceles</h3>
+                <form action="/" class="form" id="trianguloIsoceles-form">
+                    <label for="">longitud lado A</label>
+                    <input type="number" class="input input-triangulo" placeholder="Ingrese Valor" id="input-longitud1-id">
+                    <label for="">longitud lado B</label>
+                    <input type="number" class="input input-triangulo" placeholder="Ingrese Valor" id="input-longitud2-id">
+                    <label for="">Base Triangulo</label>
+                    <input type="number" class="input input-triangulo" placeholder="Ingrese Valor" id="input-Basetrialt-id">
+                    <label for="">Resultado</label> 
+                    <input type="number" class="input input-resultado" id="resultado-triangulo-alt">
+                    <button type="button" class="boton" id="triangulo-Alt-id">Calculo Altura</button>
+                    <button type="button" class="boton" id="resetear-triangulo-alt">Resetear</button>
+                 </form>
+        </section>
+
+
+
+    </div>
+    </main>
+
     <script src="/figuras.js"></script>
+    <!-- <script src="/isoceles.js"></script> -->
 </body>
 </html>
